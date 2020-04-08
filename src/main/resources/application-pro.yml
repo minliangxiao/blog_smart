@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog_smart?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8:root
+    username: root
+    password: 178290
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+logging:
+  level:
+    root: warn
+    club.huangliang.blog_smart: info
+  file: log/blog-pro.log
+server:
+  port: 80
